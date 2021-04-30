@@ -73,5 +73,5 @@ function connectionAudit {
 #128BitHex('e5 07 04 00 05 00 1e 00 0f 00 02 00 23 00 92 01')
 #128bithex("e507040005001e000f00020023009201")
 
-#connectionAudit
+#connectionAudit # Requires admin priveleges to run
 #pause 
