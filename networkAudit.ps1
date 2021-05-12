@@ -55,7 +55,7 @@ function connectionAudit {
         # Get the hex value for the created date
         $created = ($regKey.DateCreated | Format-Hex | Select-Object -Expand Bytes | ForEach-Object {'{0:x2}' -f $_ }) -join ' '
         # Get the hex value for the last connection date
-        $lastConnection = ($regKey.DateCreated | Format-Hex | Select-Object -Expand Bytes | ForEach-Object {'{0:x2}' -f $_ }) -join ' '
+        $lastConnection = ($regKey.DateLastConnected | Format-Hex | Select-Object -Expand Bytes | ForEach-Object {'{0:x2}' -f $_ }) -join ' '
         
         # Convert the hex values to a date and time
         $createdDate = 128bithex($created)
